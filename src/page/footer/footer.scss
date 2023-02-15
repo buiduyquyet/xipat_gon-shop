@@ -1,0 +1,25 @@
+.footer {
+    background-color: #383838;
+    color: white;
+    padding: 30px;
+
+    .ant-col {
+        text-align: left;
+
+    }
+
+    .footer-content {
+        .social-icon {
+            svg {
+                font-size: 26px;
+                padding-right: 10px;
+            }
+        }
+
+        .recent-posts {
+            .recent-posts__content {
+                display: flex;
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.top-rated {
+    border: 1px solid lightgray;
+    width: max-content;
+    padding: 10px;
+
+    .top-rated__title {
+        text-align: center;
+        margin: 15px 0 15px 0;
+        text-transform: uppercase;
+    }
+
+    .top-rated__item {
+        display: flex;
+        border-top: 1px solid lightgray;
+        padding: 10px 0 10px 0;
+
+        img {
+            width: 100px;
+            height: auto;
+        }
+
+        .top-rated__content {
+            text-align: left;
+            padding: 10px;
+            margin-left: 26px;
+
+            h2 {
+                color: lightgray;
+                text-transform: uppercase;
+            }
+
+            p {
+                font-weight: 800;
+            }
+
+            .star-icon {
+                color: rgb(245, 234, 23);
+            }
+        }
+    }
+}

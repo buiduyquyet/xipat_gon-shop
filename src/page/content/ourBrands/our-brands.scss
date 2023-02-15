@@ -1,0 +1,27 @@
+.our-brands {
+    border: 1px solid lightgray;
+
+    .our-brands__title {
+        border-bottom: 1px solid lightgray;
+        text-transform: uppercase;
+        margin: 0 10px 10px 10px;
+    }
+
+    .ant-row {
+        .ant-col {
+            img {
+                width: 70px;
+                height: auto;
+                padding: 18px;
+                border: 0.7px solid lightgray;
+            }
+        }
+    }
+
+    .group-btn {
+        svg {
+            font-size: 30px;
+            margin: 30px 10px 10px 10px;
+        }
+    }
+}

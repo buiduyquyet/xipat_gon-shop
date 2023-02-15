@@ -1,0 +1,43 @@
+.main-content {
+    .container {
+        width: 70%;
+        margin-left: 15%;
+
+        .container-left {
+            .sale30_img {
+                width: 300px;
+                margin-top: 20px;
+            }
+        }
+
+        .container-right {
+            float: right;
+            margin-left: 20px;
+
+            .sale50_img {
+                margin-top: 20px;
+            }
+        }
+
+        .content {
+            margin-top: 20px;
+        }
+
+        .category {
+
+            img {
+                width: 650px;
+            }
+
+        }
+    }
+
+    .video-intro {
+        margin-top: 30px;
+
+        img {
+            width: 100%;
+
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.navbar {
+    display: flex;
+    margin-left: 20%;
+    text-transform: uppercase;
+
+
+    .shop-by {
+        background-color: #40bea7;
+        font-weight: 400;
+        color: white;
+        padding: 10px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    ul {
+        display: flex;
+        margin-left: 2%;
+        list-style: none;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        li {
+            padding: 10px;
+            font-weight: 600;
+
+            .ant-space-item {
+                color: black !important;
+                text-transform: uppercase;
+                font-weight: 600;
+
+                .anticon {
+                    font-size: 9px;
+                }
+            }
+        }
+    }
+}

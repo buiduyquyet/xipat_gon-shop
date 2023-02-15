@@ -1,0 +1,19 @@
+@mixin freeViewStyle ($bgc) {
+    background-color: $bgc;
+    color: white;
+}
+
+.free-view {
+
+    .free-view__shipping {
+        @include freeViewStyle(#75a6d4);
+    }
+
+    .free-view__return {
+        @include freeViewStyle(#89ccc0);
+    }
+
+    .free-view__support {
+        @include freeViewStyle(#efb6ba);
+    }
+}

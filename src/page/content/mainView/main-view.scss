@@ -1,0 +1,55 @@
+.main {
+    min-height: 75vh;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    background: url(../../../assest/car1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .content {
+        max-width: 40rem;
+        margin-left: 20%;
+
+        h5 {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            color: #fff;
+            letter-spacing: 2px;
+        }
+
+        h3 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+            color: #fff;
+        }
+
+        p {
+            font-size: 1.2rem;
+            font-style: italic;
+            font-weight: lighter;
+            color: #eee;
+        }
+
+        .group-btn {
+            button {
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+            }
+
+            .btn__view-more {
+                background-color: black;
+                color: #fff;
+            }
+
+            .btn__buy__now {
+                background-color: #535f6b;
+                color: #fff;
+                margin-left: 20px;
+                border: 2px solid #0BBAF9;
+
+            }
+        }
+    }
+}

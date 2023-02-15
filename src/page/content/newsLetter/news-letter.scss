@@ -1,0 +1,29 @@
+.news-letter {
+    min-height: 200px;
+    background: url(../../../assest/newsletter.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+
+    h2 {
+        text-transform: uppercase;
+    }
+
+    .container-email {
+        display: flex;
+
+        input {
+            width: 70%;
+            margin-left: 10%;
+            margin-right: 20px;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            padding: 0 20px 0 20px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+    }
+}
