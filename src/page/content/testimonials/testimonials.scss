@@ -1,8 +1,10 @@
+$customBorder: 1px solid lightgray;
+
 .testimonials {
-    border: 1px solid lightgray;
+    border: $customBorder;
 
     .testimonials-title {
-        border-bottom: 1px solid lightgray;
+        border-bottom: $customBorder;
         margin: 0 10px 0 10px;
 
         h3 {

@@ -1,7 +1,9 @@
+$customBorder: 1px solid lightgray;
+
 .lastest-news {
     .lastest-news__title {
         text-transform: uppercase;
-        border-bottom: 1px solid lightgray;
+        border-bottom: $customBorder;
         margin: 0 10px 30px 10px;
 
         svg {
@@ -11,7 +13,7 @@
 
     .lastest-news__content {
         .lastest-news__item {
-            border: 1px solid lightgray;
+            border: $customBorder;
         }
 
         img {

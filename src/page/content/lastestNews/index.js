@@ -12,8 +12,8 @@ const LastestNews = () => {
                 <Col span={22}><h2>Lastest News</h2></Col>
                 <Col span={1}><RightSquareOutlined /></Col>
             </Row>
-            <Row className='lastest-news__content'>
-                <Col className='lastest-news__item' span={6} >
+            <Row className='lastest-news__content' justify='space-between' gutter={[16, 16]}>
+                <Col className='lastest-news__item' md={7} xl={6} >
                     <img src={lastestNewsImg} alt="" />
                     <h4>Vestibulum sapien turpis</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae ligula rhoncus, lacinia ligula sed, ullamcorper ipsum. Nullam sed facilisis leo.</p>
@@ -25,9 +25,8 @@ const LastestNews = () => {
                             <p><CommentOutlined style={{ color: "#37DFC0" }} /> 5</p>
                         </Col>
                     </Row>
-
                 </Col>
-                <Col className='lastest-news__item' span={6} offset={3}>
+                <Col className='lastest-news__item' md={7} xl={6}>
                     <img src={lastestNewsImg} alt="" />
                     <h4>Vestibulum sapien turpis</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae ligula rhoncus, lacinia ligula sed, ullamcorper ipsum. Nullam sed facilisis leo.</p>
@@ -38,8 +37,9 @@ const LastestNews = () => {
                         <Col span={10}>
                             <p><CommentOutlined style={{ color: "#37DFC0" }} /> 5</p>
                         </Col>
-                    </Row></Col>
-                <Col className='lastest-news__item' span={6} offset={3}>
+                    </Row>
+                </Col>
+                <Col className='lastest-news__item' md={7} xl={6} >
                     <img src={lastestNewsImg} alt="" />
                     <h4>Vestibulum sapien turpis</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae ligula rhoncus, lacinia ligula sed, ullamcorper ipsum. Nullam sed facilisis leo.</p>
@@ -50,7 +50,8 @@ const LastestNews = () => {
                         <Col span={10}>
                             <p><CommentOutlined style={{ color: "#37DFC0" }} /> 5</p>
                         </Col>
-                    </Row></Col>
+                    </Row>
+                </Col>
             </Row>
         </div>
     )

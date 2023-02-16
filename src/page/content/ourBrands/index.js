@@ -11,7 +11,7 @@ const OurBrands = () => {
             <div className='our-brands__title'>
                 <h3>Our Brands</h3>
             </div>
-            <Row justify='space-around'>
+            <Row justify='space-around' className='our-brands__content'>
                 <Col span={8}>
                     <img src={brandsImg} alt="" />
                 </Col>

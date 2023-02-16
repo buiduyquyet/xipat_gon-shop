@@ -1,13 +1,17 @@
+$customBorder: 1px solid lightgray;
+
 .our-brands {
-    border: 1px solid lightgray;
+    border: $customBorder;
 
     .our-brands__title {
-        border-bottom: 1px solid lightgray;
+        border-bottom: $customBorder;
         text-transform: uppercase;
-        margin: 0 10px 10px 10px;
+        margin: 0 10px 30px 10px;
     }
 
     .ant-row {
+        margin-top: 20px;
+
         .ant-col {
             img {
                 width: 70px;

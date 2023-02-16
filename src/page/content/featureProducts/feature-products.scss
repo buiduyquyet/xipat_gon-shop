@@ -1,6 +1,6 @@
 $customBorder: 1px solid lightgray;
 
-.feature-products {
+.feature-product {
     border: $customBorder;
 
     .titles {
@@ -8,8 +8,6 @@ $customBorder: 1px solid lightgray;
         border-bottom: $customBorder;
 
         div {
-            padding: 0 20px 0 20px;
-            text-align: center;
 
             .title-item {
                 text-transform: uppercase;
@@ -17,7 +15,7 @@ $customBorder: 1px solid lightgray;
 
             .icons-prev,
             .icons-next {
-                font-size: 20px;
+                font-size: 30px;
             }
 
             .feature {
@@ -33,12 +31,16 @@ $customBorder: 1px solid lightgray;
     }
 
     .products {
-        .ant-col {
-            padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+
+        .products-item {
+            padding: 20px;
         }
 
         img {
-            width: 200px;
+            width: 40%;
             height: auto;
             padding: 20px;
         }

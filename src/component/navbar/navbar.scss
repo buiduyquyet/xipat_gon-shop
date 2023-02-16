@@ -34,5 +34,33 @@
                 }
             }
         }
+
+        li:hover {
+            color: #40bea7;
+        }
+    }
+
+    .menu-icon {
+        display: none;
+        float: right;
+        margin-left: 65%;
+
+        svg {
+            font-size: 30px;
+        }
+    }
+
+    @media (max-width: 900px) {
+        .shop-by {
+            font-size: smaller;
+        }
+
+        .list-navbar {
+            display: none;
+        }
+
+        .menu-icon {
+            display: block;
+        }
     }
 }

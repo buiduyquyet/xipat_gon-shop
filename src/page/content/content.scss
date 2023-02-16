@@ -3,32 +3,53 @@
         width: 70%;
         margin-left: 15%;
 
-        .container-left {
-            .sale30_img {
-                width: 300px;
-                margin-top: 20px;
-            }
-        }
-
-        .container-right {
-            float: right;
-            margin-left: 20px;
-
-            .sale50_img {
-                margin-top: 20px;
-            }
-        }
+        display: grid;
+        grid-template-areas:
+            "aa aa aa"
+            "bb cc cc"
+            "ee ee ee"
+            "ff ff ff"
+        ;
+        gap: 20px;
 
         .content {
             margin-top: 20px;
         }
 
-        .category {
+        .free-view {
+            grid-area: aa;
+        }
 
-            img {
-                width: 650px;
+        .container-left {
+            grid-area: bb;
+
+            .top-rate {
+                img {
+                    margin-top: 20px;
+                }
             }
+        }
 
+        .container-right {
+            grid-area: cc;
+
+            .feature-products {
+                img {
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .category {
+            grid-area: ee;
+
+            .new-arrival-img {
+                margin-left: 10px;
+            }
+        }
+
+        .lastest-news {
+            grid-area: ff;
         }
     }
 
@@ -40,4 +61,49 @@
 
         }
     }
+
+    @media (max-width: 1400px) {
+        .container {
+            display: block;
+        }
+
+        .container-left {
+            .sale30_img {
+                width: 60%;
+                margin-top: 20px;
+            }
+        }
+
+        .container-right {
+            .sale50_img {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+
+        .category {
+            img {
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .new-arrival-img {
+                margin: 0 !important;
+            }
+        }
+    }
+
+    @media (max-width: 900px) {
+        .container {
+            margin: auto;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .container {
+            width: 100%;
+        }
+    }
+
+
 }

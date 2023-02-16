@@ -16,6 +16,19 @@
             }
         }
 
+        .flickr {
+            .flickr-imgs {
+                display: grid;
+                grid-template-columns: repeat(3, minmax(80px, 1fr));
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+        }
+
         .recent-posts {
             .recent-posts__content {
                 display: flex;

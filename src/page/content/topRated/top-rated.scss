@@ -1,40 +1,89 @@
 .top-rated {
     border: 1px solid lightgray;
-    width: max-content;
-    padding: 10px;
+    // width: max-content;
+    min-width: min-content;
+    padding: 0 10px 10px 10px;
 
     .top-rated__title {
         text-align: center;
-        margin: 15px 0 15px 0;
         text-transform: uppercase;
+        border-bottom: 1px solid lightgray;
     }
 
-    .top-rated__item {
-        display: flex;
-        border-top: 1px solid lightgray;
-        padding: 10px 0 10px 0;
+    .top-rated__container {
+        display: block;
 
-        img {
-            width: 100px;
-            height: auto;
+        .top-rated__item {
+            display: grid;
+            grid-template-columns: 40% 60%;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            .top-rated__content {
+                width: 70%;
+                text-align: left;
+                padding: 10px;
+                margin-left: 26px;
+
+                h2 {
+                    color: lightgray;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    font-weight: 800;
+                }
+
+                .star-icon {
+                    color: rgb(245, 234, 23);
+                }
+
+                @media (max-width: 1200px) {
+
+                    h2 {
+                        font-style: smaller;
+                    }
+                }
+            }
+        }
+    }
+
+
+    @media (max-width: 900px) {
+        .top-rated__container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+
+            img {
+                width: 70%;
+                height: auto;
+            }
         }
 
         .top-rated__content {
-            text-align: left;
-            padding: 10px;
-            margin-left: 26px;
-
             h2 {
-                color: lightgray;
-                text-transform: uppercase;
+                font-size: smaller;
             }
 
             p {
-                font-weight: 800;
+                font-size: smaller;
             }
+        }
+    }
 
-            .star-icon {
-                color: rgb(245, 234, 23);
+    @media (max-width: 500px) {
+        .top-rated__container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+
+            img {
+                width: 60%;
+                height: auto;
             }
         }
     }

@@ -14,7 +14,6 @@ import SpecialProducts from './specialProducts'
 import NewsLetter from './newsLetter'
 import Testimonials from './testimonials'
 import OurBrands from './ourBrands'
-import { Col, Row } from 'antd'
 import LastestNews from './lastestNews'
 
 const AppContent = () => {
@@ -22,53 +21,46 @@ const AppContent = () => {
         <main className='main-content'>
             <MainView />
             <div className='container'>
-                <FreeView />
-                <div style={{ display: 'flex' }}>
-                    <div className='container-left'>
-                        <div className='content top-rate'>
-                            <TopRated />
-                        </div>
+                <div className='free-view'>
+                    <FreeView />
+                </div>
+                <div className='container-left'>
+                    <div className='content top-rate'>
+                        <TopRated />
                         <img src={sale30Img} className="sale30_img" alt="" />
-                        <div className='content testimonials'>
-                            <Testimonials />
-                        </div>
-                        <div className='content brands'>
-                            <OurBrands />
-                        </div>
                     </div>
-                    <div className='container-right'>
-                        <div className='content feature-products'>
-                            <FeatureProducts />
-                        </div>
+                    <div className='content testimonials'>
+                        <Testimonials />
+                    </div>
+                    <div className='content brands'>
+                        <OurBrands />
+                    </div>
+                </div>
+                <div className='container-right'>
+                    <div className='content feature-products'>
+                        <FeatureProducts />
                         <img src={sale50Img} className="sale50_img" alt="" />
-                        <div className='content special-products'>
-                            <SpecialProducts />
-                        </div>
-                        <div className='content news-letter'>
-                            <NewsLetter />
-                        </div>
+                    </div>
+                    <div className='content special-products'>
+                        <SpecialProducts />
+                    </div>
+                    <div className='content news-letter'>
+                        <NewsLetter />
                     </div>
                 </div>
 
                 <div className='content category'>
-                    <Row>
-                        <Col span={10}>
-                            <img src={newCasualImg} alt="" />
-                        </Col>
-                        <Col span={10} offset={2}>
-                            <img src={newArrivalImg} style={{ marginLeft: '20px' }} alt="" />
-                        </Col>
-                    </Row>
+                    <img src={newCasualImg} className="new-casual-img" alt="" />
+                    <img src={newArrivalImg} className="new-arrival-img" alt="" />
                 </div>
                 <div className='content lastest-news'>
                     <LastestNews />
                 </div>
             </div>
             <div className='video-intro'>
-                <img src={fashionVideoImg} alt="" />
+                <img src={fashionVideoImg} className='intro-img' alt="" />
             </div>
-
-        </main>
+        </main >
     )
 }
 

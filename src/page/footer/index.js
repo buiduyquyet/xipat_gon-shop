@@ -4,15 +4,14 @@ import React from 'react'
 import './footer.scss'
 import footer1Img from '../../assest/footer1.png'
 import footerLogoImg from '../../assest/logoFooter.png'
-import flickrImg from '../../assest/flickr.png'
-
+import flickrImg from '../../assest/flickr.jpg'
 
 const AppFooter = () => {
     return (
         <footer className='footer'>
             <div className='footer-content'>
-                <Row justify='center'>
-                    <Col className='about-us' span={4}>
+                <Row justify='center' gutter={[16, 16]}>
+                    <Col className='about-us' md={12} xl={12} xxl={4}>
                         <h2>About us</h2>
                         <p><span>Office:</span> 868 Fake Street, New York</p>
                         <p><span>Phone:</span> (08) 882763354</p>
@@ -26,7 +25,7 @@ const AppFooter = () => {
                             <YoutubeOutlined />
                         </div>
                     </Col>
-                    <Col className='information' span={4}>
+                    <Col className='information' md={12} xl={12} xxl={4}>
                         <h2>Information</h2>
                         <p>Frequently</p>
                         <p>Terms and Conditions</p>
@@ -34,7 +33,7 @@ const AppFooter = () => {
                         <p>Term & Conditions</p>
                         <p>Customer Service</p>
                     </Col>
-                    <Col className='recent-posts' span={4}>
+                    <Col className='recent-posts' md={12} xl={12} xxl={4}>
                         <h2>Recent Posts</h2>
                         <div className='recent-posts__content'>
                             <img src={footer1Img} alt="" />
@@ -47,9 +46,16 @@ const AppFooter = () => {
                         </div>
 
                     </Col>
-                    <Col className='flickr' span={4} offset={2}>
+                    <Col className='flickr' md={12} xl={12} xxl={4}>
                         <h2>Flickr</h2>
-                        <img src={flickrImg} alt="" />
+                        <div className='flickr-imgs'>
+                            <img src={flickrImg} alt="" />
+                            <img src={flickrImg} alt="" />
+                            <img src={flickrImg} alt="" />
+                            <img src={flickrImg} alt="" />
+                            <img src={flickrImg} alt="" />
+                            <img src={flickrImg} alt="" />
+                        </div>
                     </Col>
                 </Row>
                 <Divider><img src={footerLogoImg} alt="" /></Divider>

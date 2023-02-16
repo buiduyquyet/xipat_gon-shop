@@ -1,3 +1,8 @@
+@mixin setBgGroupSearch($setPadding) {
+    padding: $setPadding;
+    border: 1px solid lightgray;
+}
+
 header {
     .header-top {
         background-color: black;
@@ -22,37 +27,50 @@ header {
     }
 
     .header-main {
-        margin: 20px;
+        margin: 20px 20px 20px 30px;
 
-        .cart {
-            height: max-content;
-            width: max-content;
-            border: 1px solid #40bea7;
-            border-radius: 6px;
-            cursor: pointer;
+        .header-main__right {
+            .group-search {
+                select {
+                    @include setBgGroupSearch(10px);
+                    font-weight: 600;
+                    border-right: none
+                }
 
-            p {
-                width: max-content;
-            }
+                input {
+                    @include setBgGroupSearch(10px);
+                    border-right: none;
+                }
 
-            span {
-                padding: 6px;
-            }
+                button {
+                    @include setBgGroupSearch(10px);
+                    border-left: none;
+                    background-color: white;
+                    color: lightgray;
 
-            span:first-child {
-                background-color: #40bea7;
-                border-radius: 5px 0 0 5px;
-                font-size: 18px;
-                color: white;
-
-                svg {
-                    font-size: 16px;
-                    color: white;
                 }
             }
 
-            .anticon {
-                line-height: normal;
+            .group-cart {
+                .cart {
+                    height: max-content;
+                    width: max-content;
+                    border: 1px solid #40bea7;
+                    cursor: pointer;
+
+                    p {
+                        width: max-content;
+                    }
+
+                    span {
+                        padding: 10px;
+                    }
+
+                    .cart-icon {
+                        background-color: #40bea7;
+                        color: white;
+                    }
+                }
             }
         }
     }
@@ -61,4 +79,10 @@ header {
         border-top: 1px solid lightgray;
     }
 
+}
+
+@media (max-width: 900px) {
+    .header-top {
+        display: none;
+    }
 }

@@ -1,4 +1,10 @@
-.main {
+@mixin setFontText ($fontSize) {
+    font-size: $fontSize;
+    color: #fff;
+    letter-spacing: 2;
+}
+
+.main-view {
     min-height: 75vh;
     display: flex;
     text-align: left;
@@ -11,17 +17,15 @@
         max-width: 40rem;
         margin-left: 20%;
 
-        h5 {
-            font-size: 1.2rem;
+        h3 {
+            @include setFontText(1.5rem);
             text-transform: uppercase;
-            color: #fff;
-            letter-spacing: 2px;
+            margin: unset
         }
 
-        h3 {
-            font-size: 3rem;
-            letter-spacing: 2px;
-            color: #fff;
+        h2 {
+            @include setFontText(3.2rem);
+            margin: 20px 0 20px 0;
         }
 
         p {
@@ -39,12 +43,12 @@
             }
 
             .btn__view-more {
-                background-color: black;
-                color: #fff;
+                background-color: #fff;
+                color: black;
             }
 
             .btn__buy__now {
-                background-color: #535f6b;
+                background-color: #1d2025;
                 color: #fff;
                 margin-left: 20px;
                 border: 2px solid #0BBAF9;

@@ -1,9 +1,16 @@
+$customBorder: 1px solid lightgray;
+
+@mixin customImg ($width) {
+    width: $width;
+    height: auto;
+}
+
 .special-products {
-    border: 1px solid lightgray;
+    border: $customBorder;
 
     .special-products__title {
         margin: 0 20px 0 20px;
-        border-bottom: 1px solid lightgray;
+        border-bottom: $customBorder;
 
         h3 {
             text-transform: uppercase;
@@ -27,25 +34,28 @@
 
         .new-products {
             img {
-                width: 300px;
-                height: auto;
+                @include customImg(300px)
             }
         }
 
         .other-products {
-            margin-left: 79px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
 
-            .ant-row {
-                .ant-col {
-                    display: flex;
-                    margin: 40px;
+            .products-item {
+                padding: 20px;
 
-                    img {
-                        width: 100px;
-                        height: auto;
-                    }
-
+                img {
+                    width: 50%;
+                    height: auto;
                 }
+            }
+        }
+
+        @media (max-width: 900px) {
+            .new-products {
+                display: none;
             }
         }
     }
