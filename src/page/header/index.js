@@ -27,24 +27,26 @@ const AppHeader = () => {
                     </div>
                 </Col>
                 <Col span={12} className='header-main__right'>
-                    <Row align='middle'>
-                        <Col span={12} className='group-search'>
-                            <select>
-                                <option value="0">All Category</option>
-                                <option value="1">Audi</option>
-                                <option value="2">BMW</option>
-                                <option value="3">Citroen</option>
-                            </select>
+                    {/* <div> */}
+                    <div md={12} xl={12} xxl={12} className='group-filter'>
+                        <select>
+                            <option value="0">All Category</option>
+                            <option value="1">Audi</option>
+                            <option value="2">BMW</option>
+                            <option value="3">Citroen</option>
+                        </select>
+                        <div className='group-search'>
                             <input type="text" className='input-search' placeholder="Search for products" />
-                            <button type="submit" className='btn-search'><SearchOutlined /></button>
-                        </Col>
-                        <Col span={6} className='group-cart'>
-                            <div className='cart'>
-                                <ShoppingFilled className='cart-icon' />
-                                <span>Cart: $0.00</span>
-                            </div>
-                        </Col>
-                    </Row>
+                            {/* <button type="submit" className='btn-search'><SearchOutlined /></button> */}
+                        </div>
+                    </div>
+                    <div md={12} xl={12} xxl={6} className='group-cart'>
+                        <div className='cart'>
+                            <ShoppingFilled className='cart-icon' />
+                            <span>Cart: $0.00</span>
+                        </div>
+                    </div>
+                    {/* </div> */}
                 </Col>
             </Row>
             <div className='header-navbar'>

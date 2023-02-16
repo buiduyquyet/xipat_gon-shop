@@ -30,16 +30,23 @@ header {
         margin: 20px 20px 20px 30px;
 
         .header-main__right {
-            .group-search {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+            .group-filter {
+                display: flex;
+
                 select {
-                    @include setBgGroupSearch(10px);
-                    font-weight: 600;
-                    border-right: none
+                    @include setBgGroupSearch(10px 10px 8px 10px);
+                    width: 40%;
+                    font-weight: 500;
                 }
 
                 input {
                     @include setBgGroupSearch(10px);
-                    border-right: none;
+                    background: url(../../assest/icon_search.png) no-repeat 95% 7px;
+                    background-size: 20px;
+                    padding-left: 30px;
                 }
 
                 button {
@@ -79,10 +86,22 @@ header {
         border-top: 1px solid lightgray;
     }
 
-}
+    @media (max-width: 900px) {
+        .header-top {
+            display: none;
+        }
 
-@media (max-width: 900px) {
-    .header-top {
-        display: none;
+        .header-main {
+            .header-main__right {
+                .group-filter {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+
+                    select {
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }
 }
