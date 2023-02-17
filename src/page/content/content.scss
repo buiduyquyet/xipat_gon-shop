@@ -65,6 +65,8 @@
     @media (max-width: 1400px) {
         .container {
             display: block;
+            width: 100%;
+            margin: unset;
         }
 
         .container-left {

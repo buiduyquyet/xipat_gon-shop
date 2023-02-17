@@ -15,8 +15,14 @@ h3 {
   font-size: 18px;
 }
 
+a {
+  color: white;
+}
+
 @media (max-width: 500px) {
-  .app {
-    width: 100%;
+
+  h3,
+  h2 {
+    font-size: 14px;
   }
 }

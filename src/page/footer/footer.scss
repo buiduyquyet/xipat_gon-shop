@@ -19,7 +19,7 @@
         .flickr {
             .flickr-imgs {
                 display: grid;
-                grid-template-columns: repeat(3, minmax(80px, 1fr));
+                grid-template-columns: repeat(3, 1fr);
 
                 img {
                     width: 100%;
@@ -35,4 +35,11 @@
             }
         }
     }
+
+    @media (max-width: 900px) {
+        .footer-container {
+            justify-content: left;
+        }
+    }
+
 }

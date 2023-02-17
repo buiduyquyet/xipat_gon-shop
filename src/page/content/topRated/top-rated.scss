@@ -81,6 +81,10 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 10px;
 
+            .top-rated__item {
+                display: block;
+            }
+
             img {
                 width: 60%;
                 height: auto;

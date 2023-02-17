@@ -2,6 +2,7 @@
     display: flex;
     margin-left: 20%;
     text-transform: uppercase;
+    align-items: center;
 
 
     .shop-by {
@@ -15,13 +16,13 @@
 
     ul {
         display: flex;
-        margin-left: 2%;
+        margin-left: 15%;
         list-style: none;
         margin-top: 0;
         margin-bottom: 0;
 
         li {
-            padding: 10px;
+            padding: 15px;
             font-weight: 600;
 
             .ant-space-item {
@@ -50,7 +51,19 @@
         }
     }
 
+    @media (max-width: 1200px) {
+        margin: 0 5% 0 5%;
+
+        ul {
+            margin: 0;
+        }
+    }
+
+
     @media (max-width: 900px) {
+        margin: 0 5% 0 5%;
+        width: auto;
+
         .shop-by {
             font-size: smaller;
         }

@@ -52,11 +52,7 @@ const items2 = [
     },
 ];
 
-
-
 const Navbar = () => {
-
-
     return (
         <nav className='navbar'>
             <h3 className='shop-by'><BarsOutlined /> Shop By Category</h3>

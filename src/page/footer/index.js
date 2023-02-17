@@ -10,7 +10,7 @@ const AppFooter = () => {
     return (
         <footer className='footer'>
             <div className='footer-content'>
-                <Row justify='center' gutter={[16, 16]}>
+                <Row className='footer-container' justify='center' gutter={[16, 16]}>
                     <Col className='about-us' md={12} xl={12} xxl={4}>
                         <h2>About us</h2>
                         <p><span>Office:</span> 868 Fake Street, New York</p>

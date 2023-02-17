@@ -14,6 +14,7 @@ header {
 
             span {
                 padding-left: 30px;
+
             }
         }
 
@@ -24,14 +25,33 @@ header {
                 padding-left: 30px;
             }
         }
+
+        .header-top__respon {
+            display: none;
+            align-items: center;
+        }
     }
 
     .header-main {
         margin: 20px 20px 20px 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .header-main__left {
+            width: 50%;
+
+            img {
+                width: 30%;
+                height: auto;
+            }
+        }
 
         .header-main__right {
+            width: fit-content;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-template-columns: 70% 30%;
+            gap: 20px;
 
             .group-filter {
                 display: flex;
@@ -39,6 +59,7 @@ header {
                 select {
                     @include setBgGroupSearch(10px 10px 8px 10px);
                     width: 40%;
+                    height: max-content;
                     font-weight: 500;
                 }
 
@@ -46,7 +67,7 @@ header {
                     @include setBgGroupSearch(10px);
                     background: url(../../assest/icon_search.png) no-repeat 95% 7px;
                     background-size: 20px;
-                    padding-left: 30px;
+                    padding-left: 20px;
                 }
 
                 button {
@@ -59,6 +80,8 @@ header {
             }
 
             .group-cart {
+                width: fit-content;
+
                 .cart {
                     height: max-content;
                     width: max-content;
@@ -70,7 +93,7 @@ header {
                     }
 
                     span {
-                        padding: 10px;
+                        padding: 9px;
                     }
 
                     .cart-icon {
@@ -88,17 +111,46 @@ header {
 
     @media (max-width: 900px) {
         .header-top {
-            display: none;
+
+            .header-top__respon {
+                display: flex;
+            }
+
+            .header-top__left,
+            .header-top__right {
+                display: none;
+            }
         }
 
         .header-main {
-            .header-main__right {
-                .group-filter {
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
+            margin: 5px;
 
-                    select {
+            .header-main__left {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 80%;
+                    height: auto;
+                }
+            }
+
+            .header-main__right {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, 100%);
+                gap: 10px;
+
+                .group-filter {
+                    display: block;
+                    max-width: 200px;
+                    text-align: left;
+
+                    select,
+                    .group-search {
                         width: 100%;
+                        margin-bottom: 10px;
                     }
                 }
             }
